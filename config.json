@@ -52,7 +52,7 @@
       "name": "Nightly maintenance",
       "note": "Services may be unavailable while the platform restarts.",
       "startUtc": "23:00",
-      "endUtc": "02:30",
+      "endUtc": "01:30",
       "components": ["website", "docs", "console", "signin", "api", "deployments", "billing"]
     }
   ]
