@@ -2,7 +2,7 @@
   "components": {
     "signin": {
       "2026-11-10": {
-        "ok": 4,
+        "ok": 5,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -10,7 +10,7 @@
     },
     "api": {
       "2026-11-10": {
-        "ok": 4,
+        "ok": 5,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -21,7 +21,7 @@
         "ok": 4,
         "degraded": 0,
         "down": 0,
-        "maintenance": 0
+        "maintenance": 1
       }
     },
     "deployments": {
@@ -29,12 +29,12 @@
         "ok": 4,
         "degraded": 0,
         "down": 0,
-        "maintenance": 0
+        "maintenance": 1
       }
     },
     "docs": {
       "2026-11-10": {
-        "ok": 4,
+        "ok": 5,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -42,7 +42,7 @@
     },
     "website": {
       "2026-11-10": {
-        "ok": 4,
+        "ok": 5,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -50,7 +50,7 @@
     },
     "console": {
       "2026-11-10": {
-        "ok": 4,
+        "ok": 5,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
