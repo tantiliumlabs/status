@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tantilium Status</title>
+  <meta name="description" content="Live status, incidents and maintenance for the Tantilium platform.">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="https://tantilium.cloud" aria-label="Tantilium home">
+        <img class="logo logo-light" src="logo-on-light.png" alt="Tantilium" width="140" height="30">
+        <img class="logo logo-dark" src="logo-white.png" alt="" width="140" height="30">
+      </a>
+      <a class="top-link" href="https://platform.tantilium.cloud">Go to console</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="banner" class="banner banner-loading" aria-live="polite">
+      <span class="dot" aria-hidden="true"></span>
+      <div>
+        <h1 id="banner-title">Checking status…</h1>
+        <p id="banner-sub" class="muted"></p>
+      </div>
+    </section>
+
+    <section id="active-incidents" hidden></section>
+
+    <section class="card" aria-labelledby="components-heading">
+      <div class="card-head">
+        <h2 id="components-heading">Services</h2>
+        <span class="muted small" id="window-label">Last 90 days</span>
+      </div>
+      <ul id="components" class="components"></ul>
+      <div class="legend small muted" aria-hidden="true">
+        <span><i class="sw s-ok"></i>Operational</span>
+        <span><i class="sw s-degraded"></i>Degraded</span>
+        <span><i class="sw s-partial"></i>Partial outage</span>
+        <span><i class="sw s-major"></i>Major outage</span>
+        <span><i class="sw s-maintenance"></i>Maintenance</span>
+        <span><i class="sw s-none"></i>No data</span>
+      </div>
+    </section>
+
+    <section id="maintenance" class="card" hidden></section>
+
+    <section class="card" aria-labelledby="history-heading">
+      <h2 id="history-heading">Past incidents</h2>
+      <div id="past-incidents"></div>
+    </section>
+  </main>
+
+  <footer class="wrap foot small muted">
+    <span id="updated">&nbsp;</span>
+    <span>Checked every 5 minutes from outside our network.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

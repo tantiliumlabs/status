@@ -1,0 +1,60 @@
+{
+  "components": {
+    "signin": {
+      "2026-11-10": {
+        "ok": 1,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
+      }
+    },
+    "api": {
+      "2026-11-10": {
+        "ok": 1,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
+      }
+    },
+    "billing": {
+      "2026-11-10": {
+        "ok": 1,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
+      }
+    },
+    "deployments": {
+      "2026-11-10": {
+        "ok": 1,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
+      }
+    },
+    "docs": {
+      "2026-11-10": {
+        "ok": 1,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
+      }
+    },
+    "website": {
+      "2026-11-10": {
+        "ok": 1,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
+      }
+    },
+    "console": {
+      "2026-11-10": {
+        "ok": 1,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "updatedAt": "2026-11-10T10:46:15.434Z",
+  "overall": "operational",
+  "maintenanceWindows": [
+    {
+      "name": "Nightly maintenance",
+      "note": "Services may be unavailable while the platform restarts.",
+      "startUtc": "23:00",
+      "endUtc": "02:30",
+      "components": [
+        "website",
+        "docs",
+        "console",
+        "signin",
+        "api",
+        "deployments",
+        "billing"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": "website",
+      "name": "Website",
+      "description": "tantilium.cloud",
+      "since": "2026-11-10T10:46:15.434Z",
+      "status": "operational",
+      "latencyMs": 378
+    },
+    {
+      "id": "docs",
+      "name": "Documentation",
+      "description": "docs.tantilium.cloud",
+      "since": "2026-11-10T10:46:15.434Z",
+      "status": "operational",
+      "latencyMs": 265
+    },
+    {
+      "id": "console",
+      "name": "Console",
+      "description": "The Tantilium dashboard at platform.tantilium.cloud",
+      "since": "2026-11-10T10:46:15.434Z",
+      "status": "operational",
+      "latencyMs": 267
+    },
+    {
+      "id": "signin",
+      "name": "Sign-in",
+      "description": "Login, accounts and API keys",
+      "since": "2026-11-10T10:46:15.434Z",
+      "status": "operational",
+      "latencyMs": 239
+    },
+    {
+      "id": "api",
+      "name": "Platform API",
+      "description": "Apps, environments and clusters",
+      "since": "2026-11-10T10:46:15.434Z",
+      "status": "operational",
+      "latencyMs": 248
+    },
+    {
+      "id": "deployments",
+      "name": "Builds and deployments",
+      "description": "Image builds and rollouts",
+      "since": "2026-11-10T10:46:15.434Z",
+      "status": "operational",
+      "latencyMs": 251
+    },
+    {
+      "id": "billing",
+      "name": "Billing",
+      "description": "Plans, invoices and payments",
+      "since": "2026-11-10T10:46:15.434Z",
+      "status": "operational",
+      "latencyMs": 245
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+name: status
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+  issues:
+    types: [opened, edited, closed, reopened, labeled, unlabeled, deleted]
+  issue_comment:
+    types: [created, edited, deleted]
+
+permissions:
+  contents: write
+  issues: read
+
+# Checks and incident syncs both commit to data/, so run one at a time.
+concurrency:
+  group: status-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Run checks
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          KUBEOPERA_API_HEALTH_URL: ${{ secrets.KUBEOPERA_API_HEALTH_URL }}
+          BUILDS_HEALTH_URL: ${{ secrets.BUILDS_HEALTH_URL }}
+          CICD_HEALTH_URL: ${{ secrets.CICD_HEALTH_URL }}
+        run: node scripts/check.mjs
+
+      - name: Sync incidents
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/incidents.mjs
+
+      - name: Commit data
+        run: |
+          git config user.name "status-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -q -m "status: update data"
+          for i in 1 2 3; do
+            git pull -q --rebase && git push -q && exit 0
+            sleep 5
+          done
+          exit 1

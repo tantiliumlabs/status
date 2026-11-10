@@ -1,0 +1,59 @@
+{
+  "title": "Tantilium Status",
+  "slowMs": 4000,
+  "timeoutMs": 10000,
+  "historyDays": 90,
+  "components": [
+    {
+      "id": "website",
+      "name": "Website",
+      "description": "tantilium.cloud",
+      "checks": [{ "url": "https://tantilium.cloud" }]
+    },
+    {
+      "id": "docs",
+      "name": "Documentation",
+      "description": "docs.tantilium.cloud",
+      "checks": [{ "url": "https://docs.tantilium.cloud" }]
+    },
+    {
+      "id": "console",
+      "name": "Console",
+      "description": "The Tantilium dashboard at platform.tantilium.cloud",
+      "checks": [{ "url": "https://platform.tantilium.cloud" }]
+    },
+    {
+      "id": "signin",
+      "name": "Sign-in",
+      "description": "Login, accounts and API keys",
+      "checks": [{ "url": "https://platform.tantilium.cloud/api/auth/health", "expectBody": "OK" }]
+    },
+    {
+      "id": "api",
+      "name": "Platform API",
+      "description": "Apps, environments and clusters",
+      "checks": [{ "urlEnv": "KUBEOPERA_API_HEALTH_URL" }]
+    },
+    {
+      "id": "deployments",
+      "name": "Builds and deployments",
+      "description": "Image builds and rollouts",
+      "checks": [{ "urlEnv": "BUILDS_HEALTH_URL" }, { "urlEnv": "CICD_HEALTH_URL" }]
+    },
+    {
+      "id": "billing",
+      "name": "Billing",
+      "description": "Plans, invoices and payments",
+      "checks": [{ "url": "https://platform.tantilium.cloud/api/billing/health", "expectBody": "\"ok\"" }]
+    }
+  ],
+  "maintenance": [
+    {
+      "name": "Nightly maintenance",
+      "note": "Services may be unavailable while the platform restarts.",
+      "startUtc": "23:00",
+      "endUtc": "02:30",
+      "components": ["website", "docs", "console", "signin", "api", "deployments", "billing"]
+    }
+  ]
+}
