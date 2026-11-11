@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-10T23:52:23.065Z",
-  "overall": "maintenance",
+  "updatedAt": "2026-11-11T03:56:09.246Z",
+  "overall": "major_outage",
   "maintenanceWindows": [
     {
       "name": "Nightly maintenance",
@@ -25,7 +25,7 @@
       "description": "tantilium.cloud",
       "since": "2026-11-10T10:46:15.434Z",
       "status": "operational",
-      "latencyMs": 630
+      "latencyMs": 480
     },
     {
       "id": "docs",
@@ -33,7 +33,7 @@
       "description": "docs.tantilium.cloud",
       "since": "2026-11-10T10:46:15.434Z",
       "status": "operational",
-      "latencyMs": 473
+      "latencyMs": 347
     },
     {
       "id": "console",
@@ -41,7 +41,7 @@
       "description": "The Tantilium dashboard at platform.tantilium.cloud",
       "since": "2026-11-10T10:46:15.434Z",
       "status": "operational",
-      "latencyMs": 626
+      "latencyMs": 450
     },
     {
       "id": "signin",
@@ -49,7 +49,7 @@
       "description": "Login, accounts and API keys",
       "since": "2026-11-10T10:46:15.434Z",
       "status": "operational",
-      "latencyMs": 531
+      "latencyMs": 358
     },
     {
       "id": "api",
@@ -57,25 +57,25 @@
       "description": "Apps, environments and clusters",
       "since": "2026-11-10T10:46:15.434Z",
       "status": "operational",
-      "latencyMs": 530
+      "latencyMs": 354
     },
     {
       "id": "deployments",
       "name": "Builds and deployments",
       "description": "Image builds and rollouts",
-      "since": "2026-11-10T23:52:23.065Z",
-      "status": "maintenance",
-      "latencyMs": 84,
-      "reason": "Nightly maintenance"
+      "since": "2026-11-11T03:56:09.246Z",
+      "status": "major_outage",
+      "latencyMs": 50,
+      "reason": "Connection failed"
     },
     {
       "id": "billing",
       "name": "Billing",
       "description": "Plans, invoices and payments",
-      "since": "2026-11-10T23:52:23.065Z",
-      "status": "maintenance",
-      "latencyMs": 476,
-      "reason": "Nightly maintenance"
+      "since": "2026-11-11T03:56:09.246Z",
+      "status": "major_outage",
+      "latencyMs": 429,
+      "reason": "HTTP 502"
     }
   ]
 }
