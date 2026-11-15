@@ -31,6 +31,7 @@ Edit `config.json`:
 - `components[].checks[]` takes `url` (public) or `urlEnv` (the name of a repo secret, for URLs that shouldn't be public). Optional: `expectStatus` (default 200) and `expectBody` (text the response must contain).
 - A service shows **Degraded** when it responds slower than `slowMs`, **Partial outage** when some of its checks fail, and **Major outage** when all of them fail. Each failed check is retried once after 5 seconds.
 - `maintenance` lists daily windows in UTC. Failures inside a window show as maintenance and don't count against uptime.
+- `maintenanceMode` is for planned work longer than the nightly window. While `enabled` is `true`, the page leads with its `title` and `message`, and any failing service shows as under maintenance instead of an outage, so it doesn't count against uptime. Set `enabled` to `false` when the platform is back. The next check, within 5 minutes, picks up the change.
 
 Current secrets: `KUBEOPERA_API_HEALTH_URL`, `BUILDS_HEALTH_URL`, `CICD_HEALTH_URL`.
 

@@ -9,15 +9,15 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="top">
     <div class="wrap top-inner">
       <a class="brand" href="https://tantilium.cloud" aria-label="Tantilium home">
-        <img class="logo logo-light" src="logo-on-light.png" alt="Tantilium" width="140" height="30">
-        <img class="logo logo-dark" src="logo-white.png" alt="" width="140" height="30">
+        <img class="logo" src="logo-white.png" alt="Tantilium" width="140" height="30">
+        <span class="brand-tag">Status</span>
       </a>
       <a class="top-link" href="https://platform.tantilium.cloud">Go to console</a>
     </div>
@@ -28,7 +28,8 @@
       <span class="dot" aria-hidden="true"></span>
       <div>
         <h1 id="banner-title">Checking status…</h1>
-        <p id="banner-sub" class="muted"></p>
+        <p id="banner-msg" hidden></p>
+        <p id="banner-sub" class="muted small"></p>
       </div>
     </section>
 

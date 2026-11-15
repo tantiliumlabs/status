@@ -1,53 +1,78 @@
+/* Colours follow the Tantilium console (app/globals.css in the kubeopera
+   repo): a dark teal shell by default and a violet light theme. Status colours
+   stay distinct from the brand, except maintenance, which uses the violet. */
 :root {
-  --bg: #f4f7f9;
+  --bg: #f7f3ff;
+  --bg-image:
+    radial-gradient(circle at 10% 0%, rgba(124, 58, 237, 0.15), transparent 40%),
+    radial-gradient(circle at 92% 4%, rgba(192, 38, 211, 0.13), transparent 36%),
+    radial-gradient(circle at 70% 100%, rgba(8, 145, 178, 0.12), transparent 42%),
+    linear-gradient(165deg, #faf7ff 0%, #f5efff 54%, #f0f4ff 100%);
   --surface: #ffffff;
-  --border: #e2e8f0;
-  --text: #0f172a;
-  --muted: #5b6b7f;
-  --accent: #1d9b6c;
-  --ok: #1d9b6c;
+  --border: #dcd0f2;
+  --text: #1e1338;
+  --muted: #4f4368;
+  --accent: #6d28d9;
+  --top-bg: linear-gradient(90deg, #2f1160 0%, #220c49 55%, #170834 100%);
+  --top-border: transparent;
+  --top-link: #e9d5ff;
+  --ok: #12a26b;
   --degraded: #d99a06;
   --partial: #e8590c;
   --major: #d92d20;
-  --maintenance: #2f6fdb;
-  --none: #d5dde6;
-  --shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --maintenance: #6d28d9;
+  --none: #e2d9f3;
+  --shadow: 0 10px 32px rgba(76, 29, 149, 0.1);
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #060b10;
-    --surface: #0d151d;
-    --border: #1c2a36;
-    --text: #dce7ee;
-    --muted: #8b9cad;
+    --bg: #06131d;
+    --bg-image:
+      radial-gradient(circle at 12% 0%, rgba(31, 122, 140, 0.2), transparent 38%),
+      radial-gradient(circle at 88% 8%, rgba(43, 193, 139, 0.18), transparent 34%),
+      linear-gradient(165deg, #07111c 0%, #0d1e2d 54%, #10263a 100%);
+    --surface: rgba(255, 255, 255, 0.06);
+    --border: rgba(196, 219, 231, 0.18);
+    --text: #e2ecf5;
+    --muted: rgba(219, 233, 242, 0.72);
     --accent: #2bc18b;
+    --top-bg: rgba(6, 19, 29, 0.6);
+    --top-border: rgba(196, 219, 231, 0.16);
+    --top-link: #2bc18b;
     --ok: #2bc18b;
-    --degraded: #f0b429;
-    --partial: #f76707;
-    --major: #f04438;
-    --maintenance: #5b8def;
-    --none: #24323f;
-    --shadow: none;
+    --degraded: #fbbf24;
+    --partial: #fb923c;
+    --major: #f43f5e;
+    --maintenance: #9085e9;
+    --none: rgba(196, 219, 231, 0.16);
+    --shadow: 0 14px 44px rgba(0, 0, 0, 0.22);
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #060b10;
-  --surface: #0d151d;
-  --border: #1c2a36;
-  --text: #dce7ee;
-  --muted: #8b9cad;
+  --bg: #06131d;
+  --bg-image:
+    radial-gradient(circle at 12% 0%, rgba(31, 122, 140, 0.2), transparent 38%),
+    radial-gradient(circle at 88% 8%, rgba(43, 193, 139, 0.18), transparent 34%),
+    linear-gradient(165deg, #07111c 0%, #0d1e2d 54%, #10263a 100%);
+  --surface: rgba(255, 255, 255, 0.06);
+  --border: rgba(196, 219, 231, 0.18);
+  --text: #e2ecf5;
+  --muted: rgba(219, 233, 242, 0.72);
   --accent: #2bc18b;
+  --top-bg: rgba(6, 19, 29, 0.6);
+  --top-border: rgba(196, 219, 231, 0.16);
+  --top-link: #2bc18b;
   --ok: #2bc18b;
-  --degraded: #f0b429;
-  --partial: #f76707;
-  --major: #f04438;
-  --maintenance: #5b8def;
-  --none: #24323f;
-  --shadow: none;
+  --degraded: #fbbf24;
+  --partial: #fb923c;
+  --major: #f43f5e;
+  --maintenance: #9085e9;
+  --none: rgba(196, 219, 231, 0.16);
+  --shadow: 0 14px 44px rgba(0, 0, 0, 0.22);
   color-scheme: dark;
 }
 
@@ -55,14 +80,17 @@
 
 body {
   margin: 0;
-  background: var(--bg);
+  min-height: 100vh;
+  background-color: var(--bg);
+  background-image: var(--bg-image);
+  background-attachment: fixed;
   color: var(--text);
   font: 15px/1.5 Manrope, system-ui, -apple-system, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 { margin: 0; line-height: 1.25; }
-h1 { font-size: 1.35rem; font-weight: 700; }
+h1, h2, h3 { margin: 0; line-height: 1.25; font-family: "Space Grotesk", Manrope, system-ui, sans-serif; letter-spacing: -0.01em; }
+h1 { font-size: 1.45rem; font-weight: 700; }
 h2 { font-size: 1.05rem; font-weight: 700; }
 h3 { font-size: 0.98rem; font-weight: 600; }
 p { margin: 0; }
@@ -72,31 +100,28 @@ a { color: var(--accent); }
 .muted { color: var(--muted); }
 .small { font-size: 0.85rem; }
 
-.top { border-bottom: 1px solid var(--border); background: var(--surface); }
+.top { border-bottom: 1px solid var(--top-border); background: var(--top-bg); backdrop-filter: blur(10px); }
 .top-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-.brand { display: inline-flex; }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
 .logo { height: 28px; width: auto; }
-.logo-dark { display: none; }
-.top-link { font-weight: 600; text-decoration: none; font-size: 0.9rem; }
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .logo-light { display: none; }
-  :root:not([data-theme="light"]) .logo-dark { display: inline; }
+.brand-tag {
+  font: 600 0.8rem/1 "Space Grotesk", Manrope, sans-serif; color: rgba(226, 236, 245, 0.75);
+  padding-left: 10px; border-left: 1px solid rgba(226, 236, 245, 0.3);
 }
-:root[data-theme="dark"] .logo-light { display: none; }
-:root[data-theme="dark"] .logo-dark { display: inline; }
+.top-link { font-weight: 600; text-decoration: none; font-size: 0.9rem; color: var(--top-link); }
 
 main.wrap { padding-top: 28px; padding-bottom: 8px; display: grid; gap: 20px; }
 
 .banner {
-  display: flex; gap: 14px; align-items: center;
+  display: flex; gap: 14px; align-items: flex-start;
   padding: 20px 22px; border-radius: 14px;
   background: var(--surface); border: 1px solid var(--border);
   border-left: 6px solid var(--state, var(--none));
   box-shadow: var(--shadow);
 }
-.banner .dot { width: 14px; height: 14px; border-radius: 50%; background: var(--state, var(--none)); flex: none; }
-.banner p { margin-top: 2px; }
+.banner .dot { margin-top: 7px; width: 14px; height: 14px; border-radius: 50%; background: var(--state, var(--none)); flex: none; }
+.banner p { margin-top: 4px; }
+#banner-msg { max-width: 62ch; }
 .st-operational { --state: var(--ok); }
 .st-degraded { --state: var(--degraded); }
 .st-partial_outage { --state: var(--partial); }
