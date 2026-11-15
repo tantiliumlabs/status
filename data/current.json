@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T18:53:17.279Z",
+  "updatedAt": "2026-11-15T20:17:55.646Z",
   "overall": "major_outage",
   "maintenanceWindows": [
     {
@@ -23,41 +23,46 @@
       "id": "website",
       "name": "Website",
       "description": "tantilium.cloud",
-      "since": "2026-11-10T10:46:15.434Z",
-      "status": "operational",
-      "latencyMs": 728
+      "since": "2026-11-15T20:17:55.646Z",
+      "status": "major_outage",
+      "latencyMs": 5507,
+      "reason": "HTTP 503"
     },
     {
       "id": "docs",
       "name": "Documentation",
       "description": "docs.tantilium.cloud",
-      "since": "2026-11-10T10:46:15.434Z",
-      "status": "operational",
-      "latencyMs": 512
+      "since": "2026-11-15T20:17:55.646Z",
+      "status": "major_outage",
+      "latencyMs": 5576,
+      "reason": "HTTP 503"
     },
     {
       "id": "console",
       "name": "Console",
       "description": "The Tantilium dashboard at platform.tantilium.cloud",
-      "since": "2026-11-10T10:46:15.434Z",
-      "status": "operational",
-      "latencyMs": 617
+      "since": "2026-11-15T20:17:55.646Z",
+      "status": "major_outage",
+      "latencyMs": 5567,
+      "reason": "HTTP 503"
     },
     {
       "id": "signin",
       "name": "Sign-in",
       "description": "Login, accounts and API keys",
-      "since": "2026-11-10T10:46:15.434Z",
-      "status": "operational",
-      "latencyMs": 512
+      "since": "2026-11-15T20:17:55.646Z",
+      "status": "major_outage",
+      "latencyMs": 5561,
+      "reason": "HTTP 503"
     },
     {
       "id": "api",
       "name": "Platform API",
       "description": "Apps, environments and clusters",
-      "since": "2026-11-10T10:46:15.434Z",
-      "status": "operational",
-      "latencyMs": 627
+      "since": "2026-11-15T20:17:55.646Z",
+      "status": "major_outage",
+      "latencyMs": 10001,
+      "reason": "Timed out"
     },
     {
       "id": "deployments",
@@ -65,8 +70,8 @@
       "description": "Image builds and rollouts",
       "since": "2026-11-11T03:56:09.246Z",
       "status": "major_outage",
-      "latencyMs": 24,
-      "reason": "Connection failed"
+      "latencyMs": 10001,
+      "reason": "Timed out"
     },
     {
       "id": "billing",
@@ -74,8 +79,8 @@
       "description": "Plans, invoices and payments",
       "since": "2026-11-11T03:56:09.246Z",
       "status": "major_outage",
-      "latencyMs": 408,
-      "reason": "HTTP 502"
+      "latencyMs": 5544,
+      "reason": "HTTP 503"
     }
   ]
 }
