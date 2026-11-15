@@ -99,8 +99,13 @@
     const major = active.find((i) => i.impact === 'major');
     if (active.length && state === 'operational') state = major ? 'major_outage' : 'partial_outage';
     if (active.length) title = active.length === 1 ? active[0].title : `${active.length} ongoing incidents`;
+    // Maintenance mode leads the page unless there is also an open incident.
+    const mode = active.length ? null : current.maintenanceMode;
+    if (mode) { state = 'maintenance'; title = mode.title; }
     banner.className = `banner st-${state}`;
     $('banner-title').textContent = title;
+    $('banner-msg').textContent = mode?.message ?? '';
+    $('banner-msg').hidden = !mode?.message;
     $('banner-sub').textContent = stale
       ? `Status checks haven't reported since ${dateTimeFmt.format(new Date(current.updatedAt))}. This page may be out of date.`
       : `Last checked ${ago(current.updatedAt)}`;
@@ -218,6 +223,7 @@
       console.error(err);
       $('banner').className = 'banner st-unknown';
       $('banner-title').textContent = 'Status unavailable';
+      $('banner-msg').hidden = true;
       $('banner-sub').textContent = "We couldn't load the latest status. Try again in a minute.";
     }
   }

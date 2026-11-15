@@ -55,6 +55,10 @@ function componentStatus(results, slowMs) {
   return { status: 'operational', latencyMs };
 }
 
+// Maintenance mode is switched on by hand in config.json for planned work that
+// runs longer than the nightly window. It covers every service.
+const mode = config.maintenanceMode?.enabled ? config.maintenanceMode : null;
+
 const BUCKET = { operational: 'ok', degraded: 'degraded', partial_outage: 'down', major_outage: 'down', maintenance: 'maintenance' };
 
 const components = await Promise.all(
@@ -65,6 +69,10 @@ const components = await Promise.all(
     // Failures inside the nightly window are expected and don't count as outages.
     if (window && result.status !== 'operational' && result.status !== 'unknown') {
       result = { ...result, status: 'maintenance', reason: window.name };
+    }
+    // So are failures while the whole platform is in maintenance mode.
+    if (mode && result.status !== 'operational' && result.status !== 'unknown') {
+      result = { ...result, status: 'maintenance', reason: 'Maintenance mode' };
     }
 
     const bucket = BUCKET[result.status];
@@ -97,6 +105,7 @@ else if (statuses.includes('maintenance')) overall = 'maintenance';
 await writeJson('data/current.json', {
   updatedAt: now.toISOString(),
   overall,
+  maintenanceMode: mode ? { title: mode.title, message: mode.message } : null,
   maintenanceWindows: (config.maintenance ?? []).map(({ name, note, startUtc, endUtc, components }) => ({
     name, note, startUtc, endUtc, components,
   })),

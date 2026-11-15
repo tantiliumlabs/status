@@ -3,6 +3,11 @@
   "slowMs": 4000,
   "timeoutMs": 10000,
   "historyDays": 90,
+  "maintenanceMode": {
+    "enabled": true,
+    "title": "Tantilium is in maintenance mode",
+    "message": "We're carrying out planned work on the platform, so the console, sign-in and API are offline for now. Your apps and data are safe. We'll post updates here and bring services back as soon as the work is finished."
+  },
   "components": [
     {
       "id": "website",
