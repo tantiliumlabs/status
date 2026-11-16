@@ -1,6 +1,10 @@
 {
-  "updatedAt": "2026-11-15T20:17:55.646Z",
-  "overall": "major_outage",
+  "updatedAt": "2026-11-16T00:02:34.126Z",
+  "overall": "operational",
+  "maintenanceMode": {
+    "title": "Tantilium is in maintenance mode",
+    "message": "We're carrying out planned work on the platform, so the console, sign-in and API are offline for now. Your apps and data are safe. We'll post updates here and bring services back as soon as the work is finished."
+  },
   "maintenanceWindows": [
     {
       "name": "Nightly maintenance",
@@ -23,64 +27,57 @@
       "id": "website",
       "name": "Website",
       "description": "tantilium.cloud",
-      "since": "2026-11-15T20:17:55.646Z",
-      "status": "major_outage",
-      "latencyMs": 5507,
-      "reason": "HTTP 503"
+      "since": "2026-11-16T00:02:34.126Z",
+      "status": "operational",
+      "latencyMs": 738
     },
     {
       "id": "docs",
       "name": "Documentation",
       "description": "docs.tantilium.cloud",
-      "since": "2026-11-15T20:17:55.646Z",
-      "status": "major_outage",
-      "latencyMs": 5576,
-      "reason": "HTTP 503"
+      "since": "2026-11-16T00:02:34.126Z",
+      "status": "operational",
+      "latencyMs": 530
     },
     {
       "id": "console",
       "name": "Console",
       "description": "The Tantilium dashboard at platform.tantilium.cloud",
-      "since": "2026-11-15T20:17:55.646Z",
-      "status": "major_outage",
-      "latencyMs": 5567,
-      "reason": "HTTP 503"
+      "since": "2026-11-16T00:02:34.126Z",
+      "status": "operational",
+      "latencyMs": 675
     },
     {
       "id": "signin",
       "name": "Sign-in",
       "description": "Login, accounts and API keys",
-      "since": "2026-11-15T20:17:55.646Z",
-      "status": "major_outage",
-      "latencyMs": 5561,
-      "reason": "HTTP 503"
+      "since": "2026-11-16T00:02:34.126Z",
+      "status": "operational",
+      "latencyMs": 626
     },
     {
       "id": "api",
       "name": "Platform API",
       "description": "Apps, environments and clusters",
-      "since": "2026-11-15T20:17:55.646Z",
-      "status": "major_outage",
-      "latencyMs": 10001,
-      "reason": "Timed out"
+      "since": "2026-11-16T00:02:34.126Z",
+      "status": "operational",
+      "latencyMs": 583
     },
     {
       "id": "deployments",
       "name": "Builds and deployments",
       "description": "Image builds and rollouts",
-      "since": "2026-11-11T03:56:09.246Z",
-      "status": "major_outage",
-      "latencyMs": 10001,
-      "reason": "Timed out"
+      "since": "2026-11-16T00:02:34.126Z",
+      "status": "operational",
+      "latencyMs": 583
     },
     {
       "id": "billing",
       "name": "Billing",
       "description": "Plans, invoices and payments",
-      "since": "2026-11-11T03:56:09.246Z",
-      "status": "major_outage",
-      "latencyMs": 5544,
-      "reason": "HTTP 503"
+      "since": "2026-11-16T00:02:34.126Z",
+      "status": "operational",
+      "latencyMs": 616
     }
   ]
 }
