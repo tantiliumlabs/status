@@ -48,6 +48,12 @@
         "degraded": 0,
         "down": 0,
         "maintenance": 0
+      },
+      "2026-11-21": {
+        "ok": 1,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
       }
     },
     "api": {
@@ -95,6 +101,12 @@
       },
       "2026-11-20": {
         "ok": 4,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
+      },
+      "2026-11-21": {
+        "ok": 1,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -148,6 +160,12 @@
         "degraded": 0,
         "down": 0,
         "maintenance": 0
+      },
+      "2026-11-21": {
+        "ok": 1,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
       }
     },
     "deployments": {
@@ -195,6 +213,12 @@
       },
       "2026-11-20": {
         "ok": 4,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
+      },
+      "2026-11-21": {
+        "ok": 1,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -248,6 +272,12 @@
         "degraded": 0,
         "down": 0,
         "maintenance": 0
+      },
+      "2026-11-21": {
+        "ok": 1,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
       }
     },
     "website": {
@@ -298,6 +328,12 @@
         "degraded": 0,
         "down": 0,
         "maintenance": 0
+      },
+      "2026-11-21": {
+        "ok": 1,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
       }
     },
     "console": {
@@ -345,6 +381,12 @@
       },
       "2026-11-20": {
         "ok": 4,
+        "degraded": 0,
+        "down": 0,
+        "maintenance": 0
+      },
+      "2026-11-21": {
+        "ok": 1,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
