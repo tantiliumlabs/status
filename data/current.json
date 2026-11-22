@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T06:06:29.783Z",
+  "updatedAt": "2026-11-22T14:29:04.535Z",
   "overall": "operational",
   "maintenanceMode": {
     "title": "Tantilium is in maintenance mode",
@@ -29,7 +29,7 @@
       "description": "tantilium.cloud",
       "since": "2026-11-21T23:57:30.742Z",
       "status": "operational",
-      "latencyMs": 722
+      "latencyMs": 688
     },
     {
       "id": "docs",
@@ -45,7 +45,7 @@
       "description": "The Tantilium dashboard at platform.tantilium.cloud",
       "since": "2026-11-21T23:57:30.742Z",
       "status": "operational",
-      "latencyMs": 674
+      "latencyMs": 677
     },
     {
       "id": "signin",
@@ -53,7 +53,7 @@
       "description": "Login, accounts and API keys",
       "since": "2026-11-21T23:57:30.742Z",
       "status": "operational",
-      "latencyMs": 537
+      "latencyMs": 527
     },
     {
       "id": "api",
@@ -61,7 +61,7 @@
       "description": "Apps, environments and clusters",
       "since": "2026-11-21T23:57:30.742Z",
       "status": "operational",
-      "latencyMs": 549
+      "latencyMs": 548
     },
     {
       "id": "deployments",
@@ -69,7 +69,7 @@
       "description": "Image builds and rollouts",
       "since": "2026-11-21T23:57:30.742Z",
       "status": "operational",
-      "latencyMs": 582
+      "latencyMs": 581
     },
     {
       "id": "billing",
@@ -77,7 +77,7 @@
       "description": "Plans, invoices and payments",
       "since": "2026-11-21T23:57:30.742Z",
       "status": "operational",
-      "latencyMs": 608
+      "latencyMs": 581
     }
   ]
 }
