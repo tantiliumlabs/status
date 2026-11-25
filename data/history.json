@@ -77,7 +77,7 @@
         "ok": 1,
         "degraded": 0,
         "down": 0,
-        "maintenance": 0
+        "maintenance": 1
       }
     },
     "api": {
@@ -154,7 +154,7 @@
         "maintenance": 0
       },
       "2026-11-25": {
-        "ok": 1,
+        "ok": 2,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -237,7 +237,7 @@
         "ok": 1,
         "degraded": 0,
         "down": 0,
-        "maintenance": 0
+        "maintenance": 1
       }
     },
     "deployments": {
@@ -314,7 +314,7 @@
         "maintenance": 0
       },
       "2026-11-25": {
-        "ok": 1,
+        "ok": 2,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -394,7 +394,7 @@
         "maintenance": 0
       },
       "2026-11-25": {
-        "ok": 1,
+        "ok": 2,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -477,7 +477,7 @@
         "ok": 1,
         "degraded": 0,
         "down": 0,
-        "maintenance": 0
+        "maintenance": 1
       }
     },
     "console": {
@@ -557,7 +557,7 @@
         "ok": 1,
         "degraded": 0,
         "down": 0,
-        "maintenance": 0
+        "maintenance": 1
       }
     }
   }

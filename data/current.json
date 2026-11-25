@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-25T00:35:50.981Z",
-  "overall": "operational",
+  "updatedAt": "2026-11-25T09:07:23.245Z",
+  "overall": "maintenance",
   "maintenanceMode": {
     "title": "Tantilium is in maintenance mode",
     "message": "We're carrying out planned work on the platform, so the console, sign-in and API are offline for now. Your apps and data are safe. We'll post updates here and bring services back as soon as the work is finished."
@@ -27,9 +27,10 @@
       "id": "website",
       "name": "Website",
       "description": "tantilium.cloud",
-      "since": "2026-11-21T23:57:30.742Z",
-      "status": "operational",
-      "latencyMs": 635
+      "since": "2026-11-25T09:07:23.245Z",
+      "status": "maintenance",
+      "latencyMs": 497,
+      "reason": "Maintenance mode"
     },
     {
       "id": "docs",
@@ -37,23 +38,25 @@
       "description": "docs.tantilium.cloud",
       "since": "2026-11-21T23:57:30.742Z",
       "status": "operational",
-      "latencyMs": 479
+      "latencyMs": 502
     },
     {
       "id": "console",
       "name": "Console",
       "description": "The Tantilium dashboard at platform.tantilium.cloud",
-      "since": "2026-11-21T23:57:30.742Z",
-      "status": "operational",
-      "latencyMs": 625
+      "since": "2026-11-25T09:07:23.245Z",
+      "status": "maintenance",
+      "latencyMs": 474,
+      "reason": "Maintenance mode"
     },
     {
       "id": "signin",
       "name": "Sign-in",
       "description": "Login, accounts and API keys",
-      "since": "2026-11-21T23:57:30.742Z",
-      "status": "operational",
-      "latencyMs": 510
+      "since": "2026-11-25T09:07:23.245Z",
+      "status": "maintenance",
+      "latencyMs": 443,
+      "reason": "Maintenance mode"
     },
     {
       "id": "api",
@@ -61,7 +64,7 @@
       "description": "Apps, environments and clusters",
       "since": "2026-11-21T23:57:30.742Z",
       "status": "operational",
-      "latencyMs": 565
+      "latencyMs": 671
     },
     {
       "id": "deployments",
@@ -69,15 +72,16 @@
       "description": "Image builds and rollouts",
       "since": "2026-11-21T23:57:30.742Z",
       "status": "operational",
-      "latencyMs": 623
+      "latencyMs": 655
     },
     {
       "id": "billing",
       "name": "Billing",
       "description": "Plans, invoices and payments",
-      "since": "2026-11-21T23:57:30.742Z",
-      "status": "operational",
-      "latencyMs": 606
+      "since": "2026-11-25T09:07:23.245Z",
+      "status": "maintenance",
+      "latencyMs": 478,
+      "reason": "Maintenance mode"
     }
   ]
 }
