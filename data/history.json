@@ -80,7 +80,7 @@
         "maintenance": 1
       },
       "2026-11-26": {
-        "ok": 2,
+        "ok": 3,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -166,7 +166,7 @@
         "maintenance": 0
       },
       "2026-11-26": {
-        "ok": 2,
+        "ok": 3,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -255,7 +255,7 @@
         "ok": 1,
         "degraded": 0,
         "down": 0,
-        "maintenance": 1
+        "maintenance": 2
       }
     },
     "deployments": {
@@ -341,7 +341,7 @@
         "ok": 1,
         "degraded": 0,
         "down": 0,
-        "maintenance": 1
+        "maintenance": 2
       }
     },
     "docs": {
@@ -427,7 +427,7 @@
         "ok": 1,
         "degraded": 0,
         "down": 0,
-        "maintenance": 1
+        "maintenance": 2
       }
     },
     "website": {
@@ -510,7 +510,7 @@
         "maintenance": 1
       },
       "2026-11-26": {
-        "ok": 2,
+        "ok": 3,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -596,7 +596,7 @@
         "maintenance": 1
       },
       "2026-11-26": {
-        "ok": 2,
+        "ok": 3,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
