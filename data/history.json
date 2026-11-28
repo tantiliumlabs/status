@@ -92,7 +92,7 @@
         "maintenance": 0
       },
       "2026-11-28": {
-        "ok": 1,
+        "ok": 2,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -190,7 +190,7 @@
         "maintenance": 0
       },
       "2026-11-28": {
-        "ok": 1,
+        "ok": 2,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -288,7 +288,7 @@
         "maintenance": 2
       },
       "2026-11-28": {
-        "ok": 0,
+        "ok": 1,
         "degraded": 0,
         "down": 0,
         "maintenance": 1
@@ -386,7 +386,7 @@
         "maintenance": 2
       },
       "2026-11-28": {
-        "ok": 0,
+        "ok": 1,
         "degraded": 0,
         "down": 0,
         "maintenance": 1
@@ -484,7 +484,7 @@
         "maintenance": 2
       },
       "2026-11-28": {
-        "ok": 0,
+        "ok": 1,
         "degraded": 0,
         "down": 0,
         "maintenance": 1
@@ -582,7 +582,7 @@
         "maintenance": 0
       },
       "2026-11-28": {
-        "ok": 1,
+        "ok": 2,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
@@ -680,7 +680,7 @@
         "maintenance": 0
       },
       "2026-11-28": {
-        "ok": 1,
+        "ok": 2,
         "degraded": 0,
         "down": 0,
         "maintenance": 0
